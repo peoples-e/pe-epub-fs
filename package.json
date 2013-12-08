@@ -12,20 +12,16 @@
   },
   "main": "./index.js",
   "dependencies": {
-    "lodash": "*",
-    "cheerio": "0.10.x",
-    "node-zip": "1.x",
-    "mmmagic": "*",
-    "buffers": "~0.1.1",
-    "handlebars": "~1.0.11",
-    "q": "~0.9.7"
+    "mmmagic": "*"
   },
   "devDependencies": {
     "jasmine-node": "1.4.x",
     "grunt": "~0.4.1",
     "grunt-jslint": "~0.2.5a",
     "grunt-release": "~0.3.3",
-    "pe-epub" : "*"
+    "pe-epub" : "*",
+    "lodash": "*",
+    "cheerio": "0.10.x"
   },
   "license": "MIT"
 }

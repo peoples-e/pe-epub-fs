@@ -1,26 +1,25 @@
-# pe-epub
+# pe-epub-fs
 
-makes epubs better.  
+Extends [pe-epub](https://github.com/peoples-e/pe-epub) so you can import local assets from your filesystem rather than from the web
 
-Our goal is to make it as easy as possible to output a valid epub. 
+ 	<img src="file:///path/to/image.jpg" />
 
-## JSON > EPUB
-Here's the bare minimum you need to make an epub
+Import local HTML files for the body of a page
 
 	{
 		"title" : "The Peoples E-Book",
-		"cover" : "http://placekitten.com/600/800",
+		"cover" : "file:///path/to/local/image.jpg",
 		"pages" : [{
-			"title" : "PE-EPUB",
-			"body" : "Making ebooks better."
+			"title" : "My Local Page",
+			"body" : "file:///path/to/local/page.html"
 		}]
 	}
 	
 ## Install	
-	npm install pe-pub
+	npm install pe-pub pe-epub-fs
 	
 ## Usage
-	var Peepub   = require('pe-epub');
+	var Peepub   = require('pe-epub-fs')(require('pe-epub'));
 	var epubJson = require('your-epub.json'); // see examples/example.json for the specs
 	var myPeepub = new Peepub(epubJson);
 
@@ -29,33 +28,6 @@ Here's the bare minimum you need to make an epub
 			console.log(filePath); // the same path to your epub file!
 		});
 	
-or...
-
-	myPeepub.create('/path/to/epub/')
-		.then(function(filePath){
-			console.log(filePath); // the same path but we made up a file name for u
-		});
-
-or, for the day we run in browsers...
-
-	myPeepub.create().then(function(base64epub){
-		console.log(base64epub); // your epub file!
-	});
-
-### Features
-
-Use local assets rather than from the web
-
- 	<img src="file:///path/to/image.jpg" />
-
-Import local HTML files for the body of a page
-
-    {
-		"pages" : [{
-			"title" : "My Local Page",
-			"body"  : "file:///path/to/local/page.html"
-		}]
-	}
 
 ### Testing
 	npm install -g jasmine-node
