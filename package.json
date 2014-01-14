@@ -1,7 +1,7 @@
 {
   "name": "pe-epub-fs",
   "description": "Filesystem Module for pe-epub",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "author": {
     "name": "Oliver Wise"
@@ -19,7 +19,7 @@
     "grunt": "~0.4.1",
     "grunt-jslint": "~0.2.5a",
     "grunt-release": "~0.3.3",
-    "pe-epub" : "*",
+    "pe-epub": "*",
     "lodash": "*",
     "cheerio": "0.10.x"
   },
