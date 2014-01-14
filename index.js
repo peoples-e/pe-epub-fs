@@ -16,7 +16,7 @@ function PeepubFs(Peepub){
    *        }
    * @return bool whether this test caught it
    */
-  Peepub._createFileFuncs.push( 
+  Peepub.addCreateFileFunc( 
     function(obj){
       if((/^file:\/\//).test(obj.source)){
 
