@@ -15,13 +15,13 @@
     "mmmagic": "*"
   },
   "devDependencies": {
-    "jasmine-node": "1.4.x",
-    "grunt": "~0.4.1",
-    "grunt-jslint": "~0.2.5a",
-    "grunt-release": "~0.3.3",
-    "pe-epub": "*",
+    "jasmine-node": "naeluh/jasmine-node",
+    "grunt": "~1.0.3",
+    "grunt-jslint": "~0.2.6",
+    "grunt-release": "naeluh/grunt-release",
+    "pe-epub": "naeluh/pe-epub",
     "lodash": "*",
-    "cheerio": "0.10.x"
+    "cheerio": "1.0.0-rc.2"
   },
   "license": "MIT"
 }
