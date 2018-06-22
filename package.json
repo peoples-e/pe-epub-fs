@@ -22,7 +22,7 @@
     "grunt-release": "^0.14.0",
     "jasmine-node": "1.14.x",
     "lodash": "^4.17.10",
-    "pe-epub": "naeluh/pe-epub",
+    "pe-epub": "peoples-e/pe-epub",
     "send": "^0.16.2"
   },
   "license": "MIT"
